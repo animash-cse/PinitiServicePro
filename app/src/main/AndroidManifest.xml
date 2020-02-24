@@ -56,7 +56,7 @@
         <activity android:name="bd.piniti.service_pro.WalkThroughActivity" />
         <activity android:name="bd.piniti.service_pro.startActivitys.LoginSignupActivity" />
         <activity android:name="bd.piniti.service_pro.startActivitys.OTPActivity" />
-        <activity android:name="bd.piniti.service_pro.HomePageActivity" />
+        <activity android:name="bd.piniti.service_pro.startActivitys.HomePageActivity" />
         <activity android:name="bd.piniti.service_pro.All_Services_Activity" />
         <activity android:name="bd.piniti.service_pro.startActivitys.WalkThroughActivity2" />
         <activity android:name="bd.piniti.service_pro.SalonAtHomeWomenOne" />

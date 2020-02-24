@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import at.grabner.circleprogress.CircleProgressView;
+import bd.piniti.service_pro.startActivitys.HomePageActivity;
 
 public class EventPhotographerTenActivity extends AppCompatActivity {
 
@@ -62,7 +63,7 @@ public class EventPhotographerTenActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Intent intent=new Intent(EventPhotographerTenActivity.this,HomePageActivity.class);
+        Intent intent=new Intent(EventPhotographerTenActivity.this, HomePageActivity.class);
 
         finish();
         startActivity(intent);

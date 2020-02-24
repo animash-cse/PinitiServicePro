@@ -1,4 +1,4 @@
-package bd.piniti.service_pro;
+package bd.piniti.service_pro.startActivitys;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -40,6 +40,8 @@ import java.io.IOException;
 import java.lang.reflect.Field;
 import java.util.List;
 
+import bd.piniti.service_pro.R;
+import bd.piniti.service_pro.SearchingActivity;
 import bd.piniti.service_pro.location.LocationActivity;
 import bd.piniti.service_pro.notification.NotificationActivity;
 import fragment.BookingFragment;

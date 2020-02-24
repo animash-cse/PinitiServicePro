@@ -24,7 +24,6 @@ import com.google.firebase.auth.PhoneAuthProvider;
 
 import java.util.concurrent.TimeUnit;
 
-import bd.piniti.service_pro.HomePageActivity;
 import bd.piniti.service_pro.R;
 
 public class OTPActivity extends AppCompatActivity {

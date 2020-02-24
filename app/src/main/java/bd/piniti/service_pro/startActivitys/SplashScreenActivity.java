@@ -6,7 +6,6 @@ import android.os.Bundle;
 
 import com.google.firebase.auth.FirebaseAuth;
 
-import bd.piniti.service_pro.HomePageActivity;
 import bd.piniti.service_pro.R;
 
 import static java.lang.Thread.sleep;
