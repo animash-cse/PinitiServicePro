@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/layoutDots"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/txtnext"
+        android:gravity="center"
+        android:orientation="horizontal"></LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txtskip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        android:fontFamily="@font/roboto_regular"
+        android:padding="15dp"
+        android:text="SKIP"
+        android:textColor="#8f909e"
+        android:visibility="visible" />
+
+
+    <TextView
+        android:id="@+id/txtnext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="right"
+        android:padding="15dp"
+        android:text="Next"
+        android:textColor="@color/txt_color" />
+</RelativeLayout>

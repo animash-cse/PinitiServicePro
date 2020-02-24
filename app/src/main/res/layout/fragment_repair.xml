@@ -1,0 +1,501 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:orientation="vertical">
+
+            <ExpandableListView
+                android:id="@+id/expandblelistview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#e2e2e2"
+                android:layout_gravity="start"
+
+                android:childDivider="@color/white"
+                android:groupIndicator="@null"
+                android:background="@color/white"
+                android:nestedScrollingEnabled="false"
+                android:dividerHeight="0dp"/>
+
+            <ExpandableListView
+                android:id="@+id/expandblelistview2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#e2e2e2"
+                android:layout_gravity="start"
+
+                android:childDivider="@color/white"
+                android:groupIndicator="@null"
+                android:background="@color/white"
+                android:nestedScrollingEnabled="false"
+                android:dividerHeight="0dp"/>
+
+            <LinearLayout
+                android:id="@+id/linear_shoes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="17dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="17dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageShoes"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/mehendi_artists" />
+
+                <TextView
+                    android:id="@+id/textShoes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:text="Shoes"
+                    android:textColor="@color/walkthrough_txt" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:id="@+id/arrowShoes"
+                    android:rotation="270"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@drawable/ic_down_arrow5" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"
+                android:background="#e2e2e2"
+                />
+
+            <LinearLayout
+                android:id="@+id/linear_furniture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="17dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="17dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageFurniture"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/mehendi_artists" />
+
+                <TextView
+                    android:id="@+id/textFurniture"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:text="Furniture"
+                    android:textColor="@color/walkthrough_txt" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:id="@+id/arrowFurniture"
+                    android:rotation="270"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@drawable/ic_down_arrow5" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"
+                android:background="#e2e2e2"
+                />
+
+            <LinearLayout
+                android:id="@+id/linear_machine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="17dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="17dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageMachine"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/mehendi_artists" />
+
+                <TextView
+                    android:id="@+id/textMachine"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:text="Machine"
+                    android:textColor="@color/walkthrough_txt" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:id="@+id/arrowMachine"
+                    android:rotation="270"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@drawable/ic_down_arrow5" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"
+                android:background="#e2e2e2"
+                />
+
+            <LinearLayout
+                android:id="@+id/linear_engine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="17dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="17dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageEngine"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/mehendi_artists" />
+
+                <TextView
+                    android:id="@+id/textEngine"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:text="Engine"
+                    android:textColor="@color/walkthrough_txt" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:id="@+id/arrowEngine"
+                    android:rotation="270"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@drawable/ic_down_arrow5" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"
+                android:background="#e2e2e2"
+                />
+
+            <LinearLayout
+                android:id="@+id/linear_motorcycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="17dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="17dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageMotorcycle"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/mehendi_artists" />
+
+                <TextView
+                    android:id="@+id/textMotorcycle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:text="Motorcycle"
+                    android:textColor="@color/walkthrough_txt" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:id="@+id/arrowMotorcycle"
+                    android:rotation="270"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@drawable/ic_down_arrow5" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"
+                android:background="#e2e2e2"
+                />
+
+            <LinearLayout
+                android:id="@+id/linear_auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="17dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="17dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageAuto"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/mehendi_artists" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:text="Auto"
+                    android:textColor="@color/walkthrough_txt" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:id="@+id/arrowAuto"
+                    android:rotation="270"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@drawable/ic_down_arrow5" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"
+                android:background="#e2e2e2"
+                />
+
+            <LinearLayout
+                android:id="@+id/linear_water_pump"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="17dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="17dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageWaterPump"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/mehendi_artists" />
+
+                <TextView
+                    android:id="@+id/textWaterPump"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:text="Water Pump"
+                    android:textColor="@color/walkthrough_txt" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:id="@+id/arrowWaterPump"
+                    android:rotation="270"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@drawable/ic_down_arrow5" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"
+                android:background="#e2e2e2"
+                />
+
+            <LinearLayout
+                android:id="@+id/linear_tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="17dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="17dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageTools"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/mehendi_artists" />
+
+                <TextView
+                    android:id="@+id/textTools"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:text="Tools"
+                    android:textColor="@color/walkthrough_txt" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:id="@+id/arrowTools"
+                    android:rotation="270"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@drawable/ic_down_arrow5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#f5f7f8"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/txt_color"
+                    android:text="Why Piniti Service?"
+                    android:textSize="21.7sp"
+                    android:fontFamily="@font/roboto_italic"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_senior_beautician"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Easy to find, possibly near you."
+                        android:textColor="@color/walkthrough_txt"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/roboto_regular"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_carry_item"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Know information about service and the provider. "
+                        android:textColor="@color/walkthrough_txt"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/roboto_regular"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_hygiene"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hire with confidence based on price or rating."
+                        android:textColor="@color/walkthrough_txt"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/roboto_regular"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

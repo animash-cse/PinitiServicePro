@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activitys.AddFavorites">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_add_provider" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="100dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="33dp"
+                    android:layout_marginRight="40dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:gravity="center"
+                    android:text="Add Service Provider"
+                    android:textColor="@color/txt_color"
+                    android:textSize="21.7sp" />
+
+
+                <LinearLayout
+                    android:id="@+id/upload_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="33dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginRight="33dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="15dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_profile" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="Upload a profile photo"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/blue_light_rect"
+                        android:orientation="horizontal"
+                        android:visibility="visible"></LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <EditText
+                            android:id="@+id/first_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="15dp"
+                            android:background="@drawable/black_round"
+                            android:fontFamily="@font/roboto_regular"
+                            android:hint="First Name"
+                            android:padding="5dp" />
+
+                        <EditText
+                            android:id="@+id/last_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="15dp"
+                            android:background="@drawable/black_round"
+                            android:fontFamily="@font/roboto_regular"
+                            android:hint="Last Name"
+                            android:padding="5dp" />
+
+                        <EditText
+                            android:id="@+id/phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="15dp"
+                            android:background="@drawable/black_round"
+                            android:fontFamily="@font/roboto_regular"
+                            android:hint="Phone Number"
+                            android:padding="5dp" />
+
+                        <EditText
+                            android:id="@+id/category"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="15dp"
+                            android:background="@drawable/black_round"
+                            android:fontFamily="@font/roboto_regular"
+                            android:hint="Service Category"
+                            android:padding="5dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_above="@+id/bottom_linear"
+        android:background="@drawable/shadow" />
+
+    <LinearLayout
+        android:id="@+id/bottom_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/done_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="11.7dp"
+            android:background="@drawable/blue_gradient_rect"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Done"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18.3sp" />
+    </LinearLayout>
+
+</RelativeLayout>

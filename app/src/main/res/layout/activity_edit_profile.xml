@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.EditProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_profile" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="100dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="59.7dp"
+                        android:layout_height="59.7dp"
+                        android:layout_marginLeft="11.7dp"
+                        android:layout_marginTop="17.7dp"
+                        android:layout_marginRight="17dp"
+                        android:layout_marginBottom="17.7dp"
+                        android:src="@drawable/men" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="John Doe"
+                            android:textColor="@color/txt_color"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="9891239110"
+                            android:textColor="#8f909e"
+                            android:textSize="12.7sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="john@doe.com"
+                            android:textColor="#8f909e"
+                            android:textSize="12.7sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:background="@drawable/shadow" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <EditText
+                            android:id="@+id/first_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="15dp"
+                            android:background="@drawable/black_round"
+                            android:fontFamily="@font/roboto_regular"
+                            android:hint="First Name"
+                            android:padding="12dp" />
+
+                        <EditText
+                            android:id="@+id/last_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="15dp"
+                            android:background="@drawable/black_round"
+                            android:fontFamily="@font/roboto_regular"
+                            android:hint="Last Name"
+                            android:padding="12dp" />
+
+                        <EditText
+                            android:id="@+id/phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="15dp"
+                            android:background="@drawable/black_round"
+                            android:fontFamily="@font/roboto_regular"
+                            android:hint="Phone Number"
+                            android:padding="12dp" />
+
+                        <EditText
+                            android:id="@+id/address"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="15dp"
+                            android:background="@drawable/black_round"
+                            android:fontFamily="@font/roboto_regular"
+                            android:hint="Address"
+                            android:padding="12dp" />
+
+                        <EditText
+                            android:id="@+id/date_of_birth"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="15dp"
+                            android:background="@drawable/black_round"
+                            android:fontFamily="@font/roboto_regular"
+                            android:hint="Date of Birth"
+                            android:padding="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="Gender"
+                            android:textSize="20sp" />
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Male" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Female" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Others" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_above="@+id/bottom_linear"
+        android:background="@drawable/shadow" />
+
+    <LinearLayout
+        android:id="@+id/bottom_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/done_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="11.7dp"
+            android:background="@drawable/blue_gradient_rect"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Done"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18.3sp" />
+    </LinearLayout>
+
+</RelativeLayout>

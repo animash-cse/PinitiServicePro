@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#212224">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/city_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/service_in"
+            android:textSize="8.3sp"
+            android:fontFamily="@font/roboto_regular"/>
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_marginTop="3dp"
+                android:layout_width="17dp"
+                android:layout_height="17dp">
+                <ImageView
+                    android:id="@+id/location_disable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:src="@drawable/ic_location_off"/>
+                <ImageView
+                    android:id="@+id/location_enable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:src="@drawable/ic_location_on"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/city_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="@string/turn_on_location"
+                android:textSize="15sp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"/>
+
+    </FrameLayout>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    >
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_search4"
+        android:layout_marginEnd="25dp"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:id="@+id/notification"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="25dp"
+        android:src="@drawable/ic_notifications"
+        android:visibility="invisible"/>
+</RelativeLayout>
+
+
+
+</android.support.v7.widget.Toolbar>

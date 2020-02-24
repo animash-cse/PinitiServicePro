@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="bd.piniti.service_pro">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/piniti_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="bd.piniti.service_pro.notification.NotificationActivity"></activity>
+        <activity android:name="bd.piniti.service_pro.activitys.SettingActivity" />
+        <activity android:name="bd.piniti.service_pro.activitys.EditProfileActivity" />
+        <activity android:name="bd.piniti.service_pro.activitys.AddFavorites" />
+        <activity android:name="bd.piniti.service_pro.location.TermsCondition" />
+        <activity android:name="bd.piniti.service_pro.location.ChooseLocation" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="bd.piniti.service_pro.location.GetLocation"
+            android:label="@string/title_activity_get_location" />
+        <activity android:name="bd.piniti.service_pro.AddUserInformations.Categorys" />
+        <activity android:name="bd.piniti.service_pro.AddUserInformations.UserAddressActivity" />
+        <activity android:name="bd.piniti.service_pro.AddUserInformations.UserTypeActivity" />
+        <activity android:name="bd.piniti.service_pro.AddUserInformations.GenderActivity" />
+        <activity android:name="bd.piniti.service_pro.AddUserInformations.AddBirthdayActivity" />
+        <activity android:name="bd.piniti.service_pro.AddUserInformations.AddNameActivity" />
+        <activity android:name="bd.piniti.service_pro.startActivitys.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="bd.piniti.service_pro.WalkThroughActivity" />
+        <activity android:name="bd.piniti.service_pro.startActivitys.LoginSignupActivity" />
+        <activity android:name="bd.piniti.service_pro.startActivitys.OTPActivity" />
+        <activity android:name="bd.piniti.service_pro.HomePageActivity" />
+        <activity android:name="bd.piniti.service_pro.All_Services_Activity" />
+        <activity android:name="bd.piniti.service_pro.startActivitys.WalkThroughActivity2" />
+        <activity android:name="bd.piniti.service_pro.SalonAtHomeWomenOne" />
+        <activity android:name="bd.piniti.service_pro.ReviewRatingActivity" />
+        <activity android:name="bd.piniti.service_pro.SalonAtHomeWomenTwo" />
+        <activity android:name="bd.piniti.service_pro.SalonAtHomeWomenThree" />
+        <activity android:name="bd.piniti.service_pro.OffersActivity" />
+        <activity android:name="bd.piniti.service_pro.SelectAddressActivity" />
+        <activity android:name="bd.piniti.service_pro.AddAddressActivity" />
+        <activity android:name="bd.piniti.service_pro.ScheduleTimeDateActivity" />
+        <activity android:name="bd.piniti.service_pro.PaymentActivity" />
+        <activity android:name="bd.piniti.service_pro.OrderSucessActivity" />
+        <activity android:name="bd.piniti.service_pro.MakupAndHairActivity" />
+        <activity android:name="bd.piniti.service_pro.MakupAndHairFirstActivity" />
+        <activity android:name="bd.piniti.service_pro.MakupAndHairSecondActivity" />
+        <activity android:name="bd.piniti.service_pro.MakupAndHairThirdActivity" />
+        <activity android:name="bd.piniti.service_pro.MakupAndHairFourthActivity" />
+        <activity android:name="bd.piniti.service_pro.MakupAndHairFifthActivity" />
+        <activity android:name="bd.piniti.service_pro.MakupAndHairSixActivity" />
+        <activity android:name="bd.piniti.service_pro.BridalMakupPaymentActivity" />
+        <activity android:name="bd.piniti.service_pro.BridalMakupOrderSuccessActivity" />
+        <activity android:name="bd.piniti.service_pro.WeddingPartyOneActivity" />
+        <activity android:name="bd.piniti.service_pro.WeddingPartySecondActivity" />
+        <activity android:name="bd.piniti.service_pro.MehndiActivity" />
+        <activity android:name="bd.piniti.service_pro.MehndiArtistOneActivity" />
+        <activity android:name="bd.piniti.service_pro.MehndiArtistSecondActivity" />
+        <activity android:name="bd.piniti.service_pro.MehndiArtistThirdActivity" />
+        <activity android:name="bd.piniti.service_pro.MehndiArtistFourthActivity" />
+        <activity android:name="bd.piniti.service_pro.MehndiArtistFourth_OneActivity" />
+        <activity android:name="bd.piniti.service_pro.MehndiArtistBrideActivity" />
+        <activity android:name="bd.piniti.service_pro.MehndiArtistBrideGusestActivity" />
+        <activity android:name="bd.piniti.service_pro.MehndiArtistBrideGuestThreeActivity" />
+        <activity android:name="bd.piniti.service_pro.MehndiArtistBrideGusestSixActivity" />
+        <activity android:name="bd.piniti.service_pro.AcOneActivity" />
+        <activity android:name="bd.piniti.service_pro.AcSecondActivity" />
+        <activity android:name="bd.piniti.service_pro.MehendiArtistBrideGuestsSevenActivity" />
+        <activity android:name="bd.piniti.service_pro.MehndiArtistBrideGuestNineActivity" />
+        <activity android:name="bd.piniti.service_pro.AcThirdActivity" />
+        <activity android:name="bd.piniti.service_pro.AcFourthActivity" />
+        <activity android:name="bd.piniti.service_pro.AcFifthActivity" />
+        <activity android:name="bd.piniti.service_pro.AcSixActivity" />
+        <activity android:name="bd.piniti.service_pro.AcSevenPaymentActivity" />
+        <activity android:name="bd.piniti.service_pro.AcOrderSuccessActivity" />
+        <activity android:name="bd.piniti.service_pro.GeyserOneActivity" />
+        <activity android:name="bd.piniti.service_pro.GeyserSecondActivity" />
+        <activity android:name="bd.piniti.service_pro.GeyserThreeActivity" />
+        <activity android:name="bd.piniti.service_pro.GeyserFourActivity" />
+        <activity android:name="bd.piniti.service_pro.GeyserFiveActivity" />
+        <activity android:name="bd.piniti.service_pro.GeyserSixActivity" />
+        <activity android:name="bd.piniti.service_pro.GeyserSevenActivity" />
+        <activity android:name="bd.piniti.service_pro.HomeCleaningOneActivity" />
+        <activity android:name="bd.piniti.service_pro.HomeCleaningSecondActivity" />
+        <activity android:name="bd.piniti.service_pro.HomeCleaningThreeActivity" />
+        <activity android:name="bd.piniti.service_pro.HomeCleaningFourthActivity" />
+        <activity android:name="bd.piniti.service_pro.HomeCleaningFifthActivity" />
+        <activity android:name="bd.piniti.service_pro.HomeCleaningSixActivity" />
+        <activity android:name="bd.piniti.service_pro.HomeCleaningSevenActivity" />
+        <activity android:name="bd.piniti.service_pro.KitchenCleaningOneActivity" />
+        <activity android:name="bd.piniti.service_pro.CarpetCleaningOneActivity" />
+        <activity android:name="bd.piniti.service_pro.BathroomCleaningOneActivity" />
+        <activity android:name="bd.piniti.service_pro.SofaCleaningOneActivity" />
+        <activity android:name="bd.piniti.service_pro.HomePaintingOneActivity" />
+        <activity android:name="bd.piniti.service_pro.HomePaintingSecondActivity" />
+        <activity android:name="bd.piniti.service_pro.HomePaintingThreeActivity" />
+        <activity android:name="bd.piniti.service_pro.HomePaintingFourthActivity" />
+        <activity android:name="bd.piniti.service_pro.HomePaintingFifthActivity" />
+        <activity android:name="bd.piniti.service_pro.HomePaintingSixActivity" />
+        <activity android:name="bd.piniti.service_pro.HomePaintingSevenActivity" />
+        <activity android:name="bd.piniti.service_pro.HomePaintingEightActivity" />
+        <activity android:name="bd.piniti.service_pro.PartyDecorationOneActivity" />
+        <activity android:name="bd.piniti.service_pro.PartyDecorationSecondActivity" />
+        <activity android:name="bd.piniti.service_pro.PartyDecorationThirdActivity" />
+        <activity android:name="bd.piniti.service_pro.PartyDecorationFourActivity" />
+        <activity android:name="bd.piniti.service_pro.PartyDecorationFifthActivity" />
+        <activity android:name="bd.piniti.service_pro.PartyDecorationSixActivity" />
+        <activity android:name="bd.piniti.service_pro.PartyDecorationSevenActivity" />
+        <activity android:name="bd.piniti.service_pro.WeddingPhotographerOneActivity" />
+        <activity android:name="bd.piniti.service_pro.WeddingPhotographerSecondActivity" />
+        <activity android:name="bd.piniti.service_pro.WeddingPhotographerThirdActivity" />
+        <activity android:name="bd.piniti.service_pro.WeddingPhotographerFourthActivity" />
+        <activity android:name="bd.piniti.service_pro.WeddingPhotographerFifthActivity" />
+        <activity android:name="bd.piniti.service_pro.WeddingPhotographerSixActivity" />
+        <activity android:name="bd.piniti.service_pro.WeddingPhotographerSevenActivity" />
+        <activity android:name="bd.piniti.service_pro.WeddingPhotographerEightActivity" />
+        <activity android:name="bd.piniti.service_pro.WeddingPhotographerNineActivity" />
+        <activity android:name="bd.piniti.service_pro.EventPhotographerOneActivity" />
+        <activity android:name="bd.piniti.service_pro.EventPhotographerSecondActivity" />
+        <activity android:name="bd.piniti.service_pro.EventPhotographerThirdActivity" />
+        <activity android:name="bd.piniti.service_pro.EventPhotographerFourthActivity" />
+        <activity android:name="bd.piniti.service_pro.EventPhotographerFifthActivity" />
+        <activity android:name="bd.piniti.service_pro.EventPhotographerSixActivity" />
+        <activity android:name="bd.piniti.service_pro.EventPhotographerSevenActivity" />
+        <activity android:name="bd.piniti.service_pro.EventPhotographerEightActivity" />
+        <activity android:name="bd.piniti.service_pro.EventPhotographerNineActivity" />
+        <activity android:name="bd.piniti.service_pro.EventPhotographerTenActivity" />
+        <activity android:name="bd.piniti.service_pro.PestControlOneActivity" />
+        <activity android:name="bd.piniti.service_pro.PestControlSecondActivity" />
+        <activity android:name="bd.piniti.service_pro.PestControlThirdActivity" />
+        <activity android:name="bd.piniti.service_pro.PestControlFourthActivity" />
+        <activity android:name="bd.piniti.service_pro.PestControlFifthActivity" />
+        <activity android:name="bd.piniti.service_pro.PestControlSixActivity" />
+        <activity android:name="bd.piniti.service_pro.PestControlSevenActivity" />
+        <activity android:name="bd.piniti.service_pro.MovingHomeOneActivity" />
+        <activity android:name="bd.piniti.service_pro.MovingHomeSecondActivity" />
+        <activity android:name="bd.piniti.service_pro.MovingHomeThirdActivity" />
+        <activity android:name="bd.piniti.service_pro.MovingHomeFourthActivity" />
+        <activity android:name="bd.piniti.service_pro.MovingHomeFifthActivity" />
+        <activity android:name="bd.piniti.service_pro.MovingHomeSixActivity" />
+        <activity android:name="bd.piniti.service_pro.MovingHomeSevenActivity" />
+        <activity android:name="bd.piniti.service_pro.MovingHomeEightActivity" />
+        <activity android:name="bd.piniti.service_pro.BlocksLeakageOneActivity" />
+        <activity android:name="bd.piniti.service_pro.BlocksLeakageSecondActivity" />
+        <activity android:name="bd.piniti.service_pro.BlocksLeakageThirdActivity" />
+        <activity android:name="bd.piniti.service_pro.BlocksLeakageFourthActivity" />
+        <activity android:name="bd.piniti.service_pro.BlocksLeakageFifthActivity" />
+        <activity android:name="bd.piniti.service_pro.BlocksLeakageSixActivity" />
+        <activity android:name="bd.piniti.service_pro.BlocksLeakageSevenActivity" />
+        <activity android:name="bd.piniti.service_pro.BlocksLeakageEightActivity" />
+        <activity android:name="bd.piniti.service_pro.ToiletSanitaryWorkOneActivity" />
+        <activity android:name="bd.piniti.service_pro.ToiletSanitaryWorkSecondActivity" />
+        <activity android:name="bd.piniti.service_pro.ToiletSanitaryWorkThirdActivity" />
+        <activity android:name="bd.piniti.service_pro.ToiletSanitaryWorkFourthActivity" />
+        <activity android:name="bd.piniti.service_pro.ToiletSanitaryWorkFifthActivity" />
+        <activity android:name="bd.piniti.service_pro.ToiletSanitaryWorkSixActivity" />
+        <activity android:name="bd.piniti.service_pro.ToiletSanitaryWorkSevenActivity" />
+        <activity android:name="bd.piniti.service_pro.ToiletSanitaryWorkEightActivity" />
+        <activity android:name="bd.piniti.service_pro.BathRoomFittingOneActivity" />
+        <activity android:name="bd.piniti.service_pro.BathRoomFittingSecondActivity" />
+        <activity android:name="bd.piniti.service_pro.BathRoomFittingThirdActivity" />
+        <activity android:name="bd.piniti.service_pro.BathRoomFittingFourthActivity" />
+        <activity android:name="bd.piniti.service_pro.BathRoomFittingFifthActivity" />
+        <activity android:name="bd.piniti.service_pro.BathRoomFittingSixActivity" />
+        <activity android:name="bd.piniti.service_pro.BathRoomFittingSevenActivity" />
+        <activity android:name="bd.piniti.service_pro.WaterTankOneActivity" />
+        <activity android:name="bd.piniti.service_pro.WaterTankSecondActivity" />
+        <activity android:name="bd.piniti.service_pro.WaterTankThirdActivity" />
+        <activity android:name="bd.piniti.service_pro.WaterTankFourthActivity" />
+        <activity android:name="bd.piniti.service_pro.WaterTankFifthActivity" />
+        <activity android:name="bd.piniti.service_pro.WaterTankSixActivity" />
+        <activity android:name="bd.piniti.service_pro.WaterTankSevenActivity" />
+        <activity android:name="bd.piniti.service_pro.FullHomeCheckPlumberOneActivity" />
+        <activity android:name="bd.piniti.service_pro.FanOneActivity" />
+        <activity android:name="bd.piniti.service_pro.FanSecondActivity" />
+        <activity android:name="bd.piniti.service_pro.FanThirdActivity" />
+        <activity android:name="bd.piniti.service_pro.FanFourActivity" />
+        <activity android:name="bd.piniti.service_pro.FanFifthActivity" />
+        <activity android:name="bd.piniti.service_pro.FanSixActivity" />
+        <activity android:name="bd.piniti.service_pro.FanSevenActivity" />
+        <activity android:name="bd.piniti.service_pro.FanEightActivity" />
+        <activity android:name="bd.piniti.service_pro.LightOneActivity" />
+        <activity android:name="bd.piniti.service_pro.InverterOneActivity" />
+        <activity android:name="bd.piniti.service_pro.FullHomeCheckElectricityOneActivity" />
+        <activity android:name="bd.piniti.service_pro.FullHomeCheckElectricitySecondActivity" />
+        <activity android:name="bd.piniti.service_pro.location.LocationActivity" />
+        <activity android:name="bd.piniti.service_pro.SearchingActivity" />
+
+        <service android:name="bd.piniti.service_pro.location.TrackingService" />
+    </application>
+
+</manifest>

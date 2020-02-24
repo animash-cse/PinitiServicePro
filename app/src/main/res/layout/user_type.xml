@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddUserInformations.UserTypeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_add_details" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:paddingTop="26.7dp"
+                    android:paddingBottom="26.7dp"
+                    android:text="User Type"
+                    android:textColor="@color/walkthrough_txt"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/view_line" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16.7dp"
+                    android:layout_marginTop="17.3dp"
+                    android:layout_marginRight="16.7dp"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/user_type_Group"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/radio_customer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="50dp"
+                        android:buttonTint="@color/radio_color"
+                        android:fontFamily="@font/roboto_regular"
+                        android:scaleX="1.5"
+                        android:scaleY="1.5"
+                        android:text="Customer"
+                        android:theme="@style/MyRadioButton" />
+
+                    <RadioButton
+                        android:id="@+id/radio_provider"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:buttonTint="@color/radio_color"
+                        android:checked="true"
+                        android:fontFamily="@font/roboto_regular"
+                        android:scaleX="1.5"
+                        android:scaleY="1.5"
+                        android:text="Service Provider"
+                        android:theme="@style/MyRadioButton" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_above="@+id/bottom_linear"
+        android:background="@drawable/shadow" />
+
+    <LinearLayout
+        android:id="@+id/bottom_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/type_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/roboto_regular"
+            android:padding="15dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:text="Previous"
+            android:visibility="visible"
+            android:textColor="@color/txt_color" />
+
+
+        <TextView
+            android:id="@+id/type_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="end"
+            android:onClick="onClick"
+            android:padding="15dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:text="Next"
+            android:textColor="@color/txt_color" />
+    </LinearLayout>
+
+</RelativeLayout>

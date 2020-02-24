@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bd.piniti.service_pro.SelectAddressActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_all_services" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:paddingLeft="16.3dp"
+                    android:paddingTop="26.7dp"
+                    android:paddingBottom="26.7dp"
+                    android:text="Select Address"
+                    android:textColor="@color/walkthrough_txt"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/view_line" />
+
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16.7dp"
+                    android:layout_marginTop="17dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Mr."
+                        android:theme="@style/MyRadioButton" />
+
+                    <RadioButton
+                        android:id="@+id/radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Mrs."
+                        android:theme="@style/MyRadioButton" />
+
+                    <RadioButton
+                        android:id="@+id/radio3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Miss."
+                        android:theme="@style/MyRadioButton" />
+                </RadioGroup>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16.7dp"
+                    android:layout_marginTop="17.3dp"
+                    android:layout_marginRight="16.7dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Name"
+                        android:textColor="@color/walkthrough_txt"
+                        android:textSize="11.7sp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edit_address_rect"
+                        android:fontFamily="@font/roboto_regular"
+                        android:hint="Enter Name"
+                        android:inputType="text"
+                        android:padding="12dp"
+                        android:textColor="@color/walkthrough_txt"
+                        android:textColorHint="#8f909e"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16.8dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Street / Flat"
+                        android:textColor="@color/walkthrough_txt"
+                        android:textSize="11.7sp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edit_address_rect"
+                        android:fontFamily="@font/roboto_regular"
+                        android:hint="Enter Street / Flat"
+                        android:inputType="text"
+                        android:padding="12dp"
+                        android:textColor="@color/walkthrough_txt"
+                        android:textColorHint="#8f909e"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16.8dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Locality"
+                        android:textColor="@color/walkthrough_txt"
+                        android:textSize="11.7sp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edit_address_rect"
+                        android:fontFamily="@font/roboto_regular"
+                        android:hint="Enter Locality"
+                        android:inputType="text"
+                        android:padding="12dp"
+                        android:textColor="@color/walkthrough_txt"
+                        android:textColorHint="#8f909e"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16.7dp"
+                    android:layout_marginTop="16.7dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="Address Type"
+                    android:textColor="@color/walkthrough_txt"
+                    android:textSize="15sp" />
+
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16.7dp"
+                    android:layout_marginTop="17dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Home"
+                        android:theme="@style/MyRadioButton" />
+
+                    <RadioButton
+                        android:id="@+id/radio5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Office"
+                        android:theme="@style/MyRadioButton" />
+
+                    <RadioButton
+                        android:id="@+id/radio6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Other"
+                        android:theme="@style/MyRadioButton" />
+                </RadioGroup>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_above="@+id/bottom_linear"
+        android:background="@drawable/shadow" />
+
+    <LinearLayout
+        android:id="@+id/bottom_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="11.7dp"
+            android:background="@drawable/blue_gradient_rect"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18.3sp" />
+    </LinearLayout>
+
+</RelativeLayout>

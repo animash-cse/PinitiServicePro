@@ -1,0 +1,156 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="50dp"
+    tools:context="fragment.ProfileFragment">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8.3dp"
+        android:layout_marginTop="11.7dp"
+        android:layout_marginRight="8.3dp"
+        android:layout_marginBottom="11.7dp"
+        app:cardBackgroundColor="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="59.7dp"
+                android:layout_height="59.7dp"
+                android:layout_marginLeft="11.7dp"
+                android:layout_marginTop="17.7dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginBottom="17.7dp"
+                android:src="@drawable/men" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="John Doe"
+                    android:textColor="@color/txt_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="9891239110"
+                    android:textColor="#8f909e"
+                    android:textSize="12.7sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ghoshpara, Thakurgaon"
+                    android:textColor="#8f909e"
+                    android:textSize="12.7sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:layout_marginRight="11.7dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Edit"
+                android:textColor="#8f909e"
+                android:textSize="12.7sp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/location_rect"
+        android:orientation="horizontal"
+        android:padding="18dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:text="Account Type" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/location_rect"
+            android:text="Customer"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="0dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:clipToPadding="false"
+            android:focusable="true"
+            android:nestedScrollingEnabled="false" />
+
+    </android.support.v7.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/log_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:padding="15dp"
+        android:text="@string/sign_out"
+        android:textColor="#eb4335"
+        android:textSize="15sp"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/user_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:padding="15dp"
+        android:text="Test Upload User Data"
+        android:textColor="#eb4335"
+        android:textSize="15sp" />
+
+</LinearLayout>
